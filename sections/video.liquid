@@ -1,0 +1,24 @@
+<video
+  src="{{ section.settings.video.sources[1].url }}"
+  loop
+  muted
+  playsinline
+  autoplay></video>
+{% schema %}
+  {
+    "name": "video",
+    "settings": [
+      {
+        "type": "video",
+        "id": "video",
+        "label": "A Shopify-hosted video"
+      }
+    ],
+    "presets": [
+      {
+        "name": "t:sections.video.name"
+      }
+    ]
+
+  }
+{% endschema %}
