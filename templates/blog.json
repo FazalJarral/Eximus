@@ -1,8 +1,12 @@
 {
-    "sections": {
-        "main": {
-            "type" : "single-blog"
-        }
-    },
-    "order": ["main"]
+  "sections": {
+    "main": {
+      "type": "single-blog",
+      "settings": {
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
 }
