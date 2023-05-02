@@ -1,0 +1,23 @@
+.header-inner{
+    display: flex;
+      align-items: center;
+  }
+  img.logo{
+    width:175px;
+    max-width: 175px;
+  }
+  
+  .header-icons{
+      flex: 1;
+      flex-direction: row;
+      display: flex;
+      justify-content: space-between;
+  }
+  
+  .nav-wrapper{
+    display: flex;
+    flex:5;
+  }
+  .logo_wrapper{
+    flex:1;
+  }

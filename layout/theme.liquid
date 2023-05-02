@@ -56,16 +56,17 @@
     <meta name="twitter:description" content="{{ og_description | escape }}">
 
 
-    {{ 'styles.css' | asset_url | stylesheet_tag }}
+    {{ 'theme.css' | asset_url | stylesheet_tag }}
     <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
 
     {{ content_for_header }}
   </head>
   <body class="gradient">
-
+    {% section 'header' %}
     <main>
       {{ content_for_layout }}
-      {% sections 'footer-group' %}
     </main>
+    {% sections 'footer-group' %}
+
   </body>
 </html>

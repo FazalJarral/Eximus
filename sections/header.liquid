@@ -1,0 +1,77 @@
+{{ 'component-header.css' | asset_url | stylesheet_tag }}
+<header>
+
+  <div class="header-inner">
+    {% if section.settings.logo != blank %}
+      <a href="{{ shop.url  }}" class="logo_wrapper">
+        <img
+          src="{{ section.settings.logo | image_url}}"
+          loading="eager"
+          class="logo"></a>
+
+    {% else %}
+      <h2>{{ shop.title }}</h2>
+    {% endif %}
+
+    <div class="nav-wrapper">
+      <nav>
+        <ul>
+          {% for link in section.settings.menu.links %}
+            <li>
+              <a href="{{ link.title }}">
+                <span>
+                  {{ link.title }}
+                </span>
+              </a>
+            </li>
+          {% endfor %}
+        </ul>
+      </nav>
+    </div>
+    <div class="header-icons">
+      {%- if shop.customer_accounts_enabled -%}
+        <ul>
+          {%- if customer -%}
+            <li>
+              <a href="/account">Account</a>
+            </li>
+            <li>
+              {{ 'Log out' | customer_logout_link }}
+            </li>
+          {%- else -%}
+            <li>
+              {{ 'Log in' | customer_login_link }}
+            </li>
+
+          {%- endif -%}
+        </ul>
+      {%- endif -%}
+
+      <span>CART</span>
+    </div>
+  </div>
+
+
+</header>
+
+
+{% schema %}
+  {
+    "name": "Header",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "logo",
+        "label": "Logo"
+      }, {
+        "type": "color",
+        "id": "bg_color",
+        "label": "Background Color"
+      }, {
+        "type": "link_list",
+        "id": "menu",
+        "label": "Navigation Menu"
+      }
+    ]
+  }
+{% endschema %}

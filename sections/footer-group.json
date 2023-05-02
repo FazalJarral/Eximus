@@ -1,16 +1,22 @@
 {
-    "name": "Footer",
-    "type": "footer",
-    "sections": {
-        
-            "footer": {
-                "type" : "footer"
-            }
-        
+  "name": "Footer",
+  "type": "footer",
+  "sections": {
+    "d797848d-a63a-4478-914a-721e3d035907": {
+      "type": "video",
+      "settings": {
+        "video": "shopify:\/\/files\/videos\/_import_621da8d8e3f701.40263170_preview.mp4"
+      }
     },
-    "order": [
-        "footer"
-      ]
-
-
+    "footer": {
+      "type": "footer",
+      "settings": {
+        "background_color": ""
+      }
+    }
+  },
+  "order": [
+    "d797848d-a63a-4478-914a-721e3d035907",
+    "footer"
+  ]
 }
