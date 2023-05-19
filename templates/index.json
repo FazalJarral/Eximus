@@ -1,7 +1,22 @@
 {
   "sections": {
+    "hero":{
+      "type" : "hero-slider"
+    },
+    "video":{
+      "type" : "video"
+    },
+    "accordion": {
+      "type" : "accordion"
+    },
+    "featured_collection": {
+      "type" : "featured-collection"
+    }
   },
   "order": [
-
+    "hero",
+    "video",
+    "accordion",
+    "featured_collection"
   ]
 }

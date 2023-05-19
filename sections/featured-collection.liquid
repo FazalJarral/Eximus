@@ -1,0 +1,38 @@
+<div class="featured-collection container mx-auto sm::px-4 flex flex-wrap justify-between mt-4  lg:px-8 sm:max-w-7xl">
+  {% if section.settings.masonary %}
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+      {% for product in collections['frontpage'].products %}
+        {% render 'card-product-masonary' product: product %}
+      {% endfor %}
+    </div>
+  {% else %}
+    {% for product in collections['frontpage'].products %}
+      {% render 'card-product' product: product %}
+    {% endfor %}
+  {% endif %}
+</div>
+
+
+{% schema %}
+  {
+    "name": "Featured Collection",
+    "settings": [
+      {
+        "type": "collection",
+        "id": "collection",
+        "label": "Featured Collection"
+      }, {
+        "type": "checkbox",
+        "id": "masonary",
+        "default": false,
+        "label": "Masonary"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Featured Collection"
+      }
+    ]
+  }
+{% endschema %}

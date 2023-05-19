@@ -2,21 +2,44 @@
   "name": "Footer",
   "type": "footer",
   "sections": {
-    "d797848d-a63a-4478-914a-721e3d035907": {
-      "type": "video",
-      "settings": {
-        "video": "shopify:\/\/files\/videos\/_import_621da8d8e3f701.40263170_preview.mp4"
-      }
-    },
     "footer": {
       "type": "footer",
+      "blocks": {
+        "5945a69c-8ba1-4d91-819e-8c4208ca5512": {
+          "type": "newsletter",
+          "settings": {
+            "newsletter_text": ""
+          }
+        },
+        "9ca756d2-8b23-471b-ad34-9ad8dfa01297": {
+          "type": "linklist",
+          "settings": {
+            "menu": "footer"
+          }
+        },
+        "9b9dcb2c-e8e8-4bdf-84e1-ce3f48af67d1": {
+          "type": "linklist",
+          "settings": {
+            "menu": "main-menu"
+          }
+        },
+        "78e88f8f-a979-4c2f-bec9-22a8d47c18ea": {
+          "type": "social",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "5945a69c-8ba1-4d91-819e-8c4208ca5512",
+        "9ca756d2-8b23-471b-ad34-9ad8dfa01297",
+        "9b9dcb2c-e8e8-4bdf-84e1-ce3f48af67d1",
+        "78e88f8f-a979-4c2f-bec9-22a8d47c18ea"
+      ],
       "settings": {
-        "background_color": ""
       }
     }
   },
   "order": [
-    "d797848d-a63a-4478-914a-721e3d035907",
     "footer"
   ]
 }

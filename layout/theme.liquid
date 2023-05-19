@@ -56,17 +56,19 @@
     <meta name="twitter:description" content="{{ og_description | escape }}">
 
 
-    {{ 'theme.css' | asset_url | stylesheet_tag }}
+    {{ 'styles.css' | asset_url | stylesheet_tag }}
     <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
 
     {{ content_for_header }}
   </head>
-  <body class="gradient">
+  <body class="gradient min-h-full">
     {% section 'header' %}
+    {% section 'cart-drawer' %}
     <main>
       {{ content_for_layout }}
     </main>
     {% sections 'footer-group' %}
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.6.5/flowbite.min.js" async></script>
 
   </body>
 </html>
