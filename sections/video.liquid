@@ -1,10 +1,17 @@
-<div class="px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl">
+{% if section.settings.full_wdith %}
+  <style>
+    video {
+      width: 100%;
+    }
+  </style>
+{% endif %}
+<div class="{% if section.settings.full_wdith %} w-full {% else %} px-4 mx-auto sm:px-6 lg:px-8 max-w-7xl{% endif %}">
   <video
     src="{{ section.settings.video.sources[1].url }}"
     loop
-    muted
     playsinline
-    autoplay></video>
+    autoplay
+    controls></video>
 </div>
 {% schema %}
   {

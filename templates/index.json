@@ -1,7 +1,10 @@
 {
   "sections": {
-    "hero":{
+    "hero-slider":{
       "type" : "hero-slider"
+    },
+    "hero-banner":{
+      "type" : "hero-banner"
     },
     "video":{
       "type" : "video"
@@ -11,12 +14,18 @@
     },
     "featured_collection": {
       "type" : "featured-collection"
+    },
+    "featured_collection_list": {
+      "type" : "featured-collection-list"
     }
   },
   "order": [
-    "hero",
+    "hero-slider",
+    "featured_collection",
+    "featured_collection_list",
     "video",
-    "accordion",
-    "featured_collection"
+    "hero-banner",
+    "accordion"
+    
   ]
 }
