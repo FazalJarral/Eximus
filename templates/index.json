@@ -17,6 +17,9 @@
     },
     "featured_collection_list": {
       "type" : "featured-collection-list"
+    },
+    "testimonials": {
+      "type" : "testimonials"
     }
   },
   "order": [
@@ -25,6 +28,7 @@
     "featured_collection_list",
     "video",
     "hero-banner",
+    "testimonials",
     "accordion"
     
   ]

@@ -59,6 +59,9 @@
     {{ 'styles.css' | asset_url | stylesheet_tag }}
     <script src="{{ 'theme.js' | asset_url }}" defer="defer"></script>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <link href="https://unpkg.com/swiper/swiper-bundle.min.css" rel="stylesheet" />
     {{ content_for_header }}
   </head>
   <body class="gradient min-h-full">
