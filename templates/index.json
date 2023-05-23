@@ -1,5 +1,8 @@
 {
   "sections": {
+    "text-with-image":{
+      "type" : "text-with-image"
+    },
     "hero-slider":{
       "type" : "hero-slider"
     },
@@ -24,6 +27,7 @@
   },
   "order": [
     "hero-slider",
+    "text-with-image",
     "featured_collection",
     "featured_collection_list",
     "video",
