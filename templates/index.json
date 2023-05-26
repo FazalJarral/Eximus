@@ -18,6 +18,9 @@
     "featured_collection": {
       "type" : "featured-collection"
     },
+    "blog": {
+      "type" : "featured-blog"
+    },
     "featured_collection_list": {
       "type" : "featured-collection-list"
     },
@@ -30,6 +33,7 @@
     "text-with-image",
     "featured_collection",
     "featured_collection_list",
+    "blog",
     "video",
     "hero-banner",
     "testimonials",
